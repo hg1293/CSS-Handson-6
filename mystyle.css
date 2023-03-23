@@ -1,0 +1,248 @@
+.main
+{
+    background-image: url(./shara_desert.jpg);
+    background-repeat: repeat;
+    width: 80%;
+}
+.main-cont
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+img{
+    width: 80px;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+}
+.anchor
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+.heading
+{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    color: rgb(251, 250, 249);
+}
+.head
+{
+    margin-right: 80px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.heading1
+{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    right: 70px;
+    top: 20px;
+}
+.menu img
+{
+    width: 40px;
+    height: 40px;
+    /* margin-left: -200px;
+    margin-top: -10px; */
+    position: absolute;
+    left: -100px;
+}
+.sahara
+{
+    font-size:100px;
+    color: rgb(248, 247, 246);
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    font-weight: bolder;
+}
+.para
+{
+    color: rgb(254, 254, 254);
+    position: absolute;
+    top: 230px;
+    left: 70px;
+}
+.btn
+{
+   color: black;
+   font-size: 20px;
+   background-color: aliceblue;
+   border: 2px solid aliceblue;
+   border-radius: 20px;
+   position: absolute;
+}
+.parent
+{
+    display: flex;
+    justify-content: space-around;
+}
+.child
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-top: 100px;
+    margin-left: 700px;
+}
+.item
+{
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    width: 13em;
+    height: 16em;
+    padding-left: 1em;
+    transition: transform .4s ease-out;
+    color: aliceblue;
+   
+}
+.i1
+{
+    background-image: url(./pic-1.png);
+}
+.i2
+{
+    background-image: url(./pic-2.png);
+}
+.i3
+{
+    background-image: url(./pic-3.png);
+}
+.i4
+{
+    background-image: url(./pic-4.png);
+}
+.item:hover{
+    transform: translate(0,-15px);
+}
+
+
+@media screen and (min-width:600px) and (max-width:900px) 
+{
+    img
+    {
+        /* margin-left: 2px; */
+        width: 80px;
+        position: absolute;
+        left: 60px;
+        top: 27px;
+    }
+    .sahara
+    {
+        font-size: 40px;
+        margin-left: 1px;
+        position: absolute;
+        top: 120px;
+    }
+    .para
+    {
+        position: absolute;
+        top: 160px;
+        /* margin-top: -250px; */
+        margin-left: 1px ;
+
+    }
+    .child
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% -50%);
+
+        display: flex;
+        flex-direction: column;
+    }
+    .item
+    {
+        width: 25em;
+        height: 15em;
+    }
+    .item:hover{
+        transform: translate(0,-15px);
+    }
+    .head
+    {
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    .head img
+    {
+        width: 50px;
+        position: absolute;
+        top: 30px;
+        left: -70px;
+        font-size: -15px;
+        
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:600px) 
+{
+    img
+    {
+        /* margin-left: 2px; */
+        width: 60px;
+        position: absolute;
+        left: 40px;
+        top: 27px;
+    
+    }
+    .sahara
+    {
+        /* margin-top: 2000px; */
+        font-size: 40px;
+        margin-left: -40px;
+        position: absolute;
+        top: 120px;
+    }
+    .para
+    {
+        position: absolute;
+        top: 160px;
+        /* margin-top: -250px; */
+        margin-left: -40px ;
+
+    }
+    .child
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% -50%);
+
+        display: flex;
+        flex-direction: column;
+    }
+    .item
+    {
+        width: 10em;
+        height: 15em;
+    }
+    .item:hover{
+        transform: translate(0,-15px);
+    }
+    .heading1
+    {
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        font-size: 10px;
+    }
+    .menu img
+    {
+        width: 40px;
+        position: absolute;
+        top: 40px;
+        left: -80px;
+        font-size: -15px;
+        
+    }
+}
